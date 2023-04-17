@@ -16,3 +16,6 @@ for x in range(1, s):
         if x + y == s:
             print(x, y)
             break
+
+        
+
