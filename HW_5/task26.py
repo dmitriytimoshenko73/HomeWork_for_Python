@@ -9,13 +9,14 @@ A = 3; B = 5 -> 243 (3⁵)
 
 a = int(input("Введите число "))
 b = int(input("Введите степень числа(целое неотрицательно число) "))
+if b < 0:
+    print("Вы ввели отрицательное число")    
+else:   
+    def func(a, b):
+        if b == 0:
+           return 1
+
+        return a * func(a, b - 1)
 
 
-def func(a, b):
-    if b == 0:
-       return 1
-
-    return a * func(a, b - 1)
-
-
-print(func(a, b))
+    print(func(a, b))
